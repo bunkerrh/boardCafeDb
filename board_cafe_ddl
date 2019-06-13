@@ -1,0 +1,21 @@
+CREATE TABLE board_cafe.menu_item (
+    ITEM_ID  INT NOT NULL,
+    ITEM_NAME VARCHAR(45) NULL,
+    ITEM_DESC VARCHAR(255) NULL,
+    ITEM PRICE DOUBLE NULL,
+    SHELLFISH_FLG BOOLEAN NULL,
+    PEANUT_FLG BOOLEAN NULL,
+    GLUTEN_FLG BOOLEAN NULL,
+    PRIMARY KEY (ITEM_ID));
+
+
+
+
+
+CREATE TABLE `board_cafe`.`user` (
+  `user_id` INT NOT NULL,
+  `fName` VARCHAR(45) NULL,
+  `lName` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `loyalPoints` INT NULL,
+  PRIMARY KEY (`user_id`));
